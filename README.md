@@ -1,4 +1,4 @@
-# RESTful API Node with Mongoose and JEST
+# RESTful API Node about Supermarket
 
 ## Features
 
