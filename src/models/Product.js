@@ -7,8 +7,11 @@ const productSchema = mongoose.Schema(
     name: {
       type: String,
       required: true,
+      lowercase: false,
+      minlength: 8,
+      maxlength: 100,
       validate(value) {
-        if (validator.isEmpty(value) || !validator.isLength(value, { min: 2 }) || validator.isLowercase(value)) {
+        if (validator.isEmpty(value)) {
           throw new Error('Invalid name');
         }
       },
@@ -45,7 +48,6 @@ const productSchema = mongoose.Schema(
       type: Number,
       required: true,
       unique: false,
-      trim: true,
       validate(value) {
         if (!validator.isFloat(value, { min: 0.01, max: 1000.0 })) {
           throw new Error('Invalid price');
