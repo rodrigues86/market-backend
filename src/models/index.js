@@ -1,2 +1,4 @@
-module.exports.Token = require('./token.model');
-module.exports.User = require('./user.model');
+module.exports.Token = require('./Token');
+module.exports.User = require('./User');
+module.exports.Product = require('./Product');
+module.exports.Order = require('./Order');

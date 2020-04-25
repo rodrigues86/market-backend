@@ -1,9 +1,9 @@
 {
-  "name": "node-auth-mongodb-jest",
+  "name": "market-backend",
   "version": "1.0.0",
   "description": "A boilerplate for building production-ready RESTful APIs using Node.js, Express, JEST test and Mongoose",
   "main": "src/index.js",
-  "repository": "https://github.com/rodrigues86/node-auth-mongodb-jest.git",
+  "repository": "https://github.com/rodrigues86/market-backend.git",
   "author": "Rodrigo Rodrigues <rsrodrigues2@gmail.com>",
   "license": "MIT",
   "engines": {

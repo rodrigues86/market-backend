@@ -10,6 +10,14 @@ const userSchema = mongoose.Schema(
       type: String,
       required: true,
       trim: true,
+      validate(value) {
+        if (!value.match(/[a-zA-Z]/)) {
+          throw new Error('Name must contain at least one letter and one number');
+        }
+        if (validator.isEmpty(value) || !validator.isLength(value, { min: 3 }) || validator.isLowercase(value)) {
+          throw new Error('Invalid name');
+        }
+      },
     },
     email: {
       type: String,

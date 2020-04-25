@@ -4,7 +4,7 @@ const httpStatus = require('http-status');
 const config = require('../config/config');
 const tokenService = require('./token.service');
 const userService = require('./user.service');
-const Token = require('../models/token.model');
+const Token = require('../models/Token');
 const AppError = require('../utils/AppError');
 
 const generateAuthTokens = async userId => {

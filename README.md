@@ -31,8 +31,8 @@
 Clone the repo:
 
 ```bash
-git clone https://github.com/rodrigues86/node-auth-mongodb-jest.git
-cd node-auth-mongodb-jest
+git clone https://github.com/rodrigues86/market-backend.git
+cd market-backend
 ```
 
 Install dependencies:
